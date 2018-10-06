@@ -5,5 +5,4 @@ public class Aluno {
     private String ra;
     private int nascimento;
     private String curso;
-
 }
