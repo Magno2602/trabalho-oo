@@ -16,7 +16,7 @@ public class MenuCadastroLivroItem extends MenuItem {
     @Override
     public MenuItem opcaoEscolhida() {
         System.out.print("> Escolha a operação: ");
-        int opcao = getOpcaoEscolhida();1
+        int opcao = getOpcaoEscolhida();
         switch (opcao) {
             case 1:
                 Livro livro = new Livro();
