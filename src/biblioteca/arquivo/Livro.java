@@ -7,6 +7,37 @@ public class Livro {
     private int exemplares;
     private String autor;
 
+    public Livro() {
+    }
+
+    public Livro(String nome, String isbn, int ano, int exemplares, String autor) {
+        this.nome = nome;
+        this.isbn = isbn;
+        this.ano = ano;
+        this.exemplares = exemplares;
+        this.autor = autor;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public int getExemplares() {
+        return exemplares;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -34,5 +65,9 @@ public class Livro {
                 ", ano=" + ano +
                 ", exemplares=" + exemplares +
                 ", autor='" + autor + '\'';
+    }
+
+    public void reduzirExemplares() {
+        this.exemplares--;
     }
 }

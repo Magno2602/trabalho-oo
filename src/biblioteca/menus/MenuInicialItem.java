@@ -20,9 +20,9 @@ public class MenuInicialItem extends MenuItem {
             case 1:
                 return new MenuCadastroLivroItem();
             case 2:
-//                return new MenuCadastroAlunoItem();
+                return new MenuCadastroAlunoItem();
             case 3:
-//                return new MenuAluguelItem();
+                return new MenuCadastroAluguelItem();
             case 0:
                 return null;
             default:
