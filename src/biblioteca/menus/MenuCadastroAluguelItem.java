@@ -44,7 +44,7 @@ public class MenuCadastroAluguelItem extends MenuItem {
                     System.err.println("*Precisa selecionar um livro antes!");
                 }
 
-                if (aluno != null && livro != null) {
+                if (aluno != null || livro != null) {
                     Aluguel aluguel = new Aluguel();
                     System.out.print("Informe o prazo do aluguel: ");
                     aluguel.setPrazo(getNumero());
